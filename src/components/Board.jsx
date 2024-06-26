@@ -13,11 +13,12 @@ const style = {
 };
 */
 
+//Board Styling using Tailwind
 const style = "border-4 border-blue-700 rounded-lg w-64 h-64 mx-auto grid grid-rows-3 grid-cols-3";
 
 const Board = ({ squares, onClick, tbRemoved=null, win=null }) => {
     
-
+    //win prop passes down to the specified square on the board when win condition is true and highlights the winning path
     return (
         <div className={style}>
             {squares.map((square, i) => (

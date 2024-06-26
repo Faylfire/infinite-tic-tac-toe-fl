@@ -1,6 +1,8 @@
-# React + Vite
+# Infinite Tic Tac Toe
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An infinite Tic Tac Toe implementation using React and Tailwind CSS.
+
+This project is a furtherance of a Scrimba implmentation of the original game of Tic Tac Toe.
 
 Currently, two official plugins are available:
 

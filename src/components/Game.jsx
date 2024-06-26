@@ -1,13 +1,10 @@
 import React, { useState, useRef } from 'react';
 import { calculateWinner } from '../helpers';
 import Board from './Board';
-import reactLogo from '../assets/react.svg'
-import { FaReact } from "react-icons/fa6";
-import { SiTailwindcss } from "react-icons/si";
 //https://www.npmjs.com/package/js-confetti
 import JSConfetti from 'js-confetti'
 
-
+//Initialize canvas for confetti on win condition
 const jsConfetti = new JSConfetti()
 
 const styles = {
@@ -24,6 +21,7 @@ const Game = () => {
     const restartBtnRef = useRef()
     console.log(winner)
 
+    //Confetti animation added on win condition
     if (winner){
         restartBtnRef.current.focus()
         jsConfetti.addConfetti({
@@ -67,6 +65,7 @@ const Game = () => {
         setXisNext(step % 2 === 0)
     };
 
+    //Rests state for game restart
     const restart = () => {
         setHistory([Array(9).fill(null)])
         setStepNumber(0)
