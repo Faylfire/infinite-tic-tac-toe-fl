@@ -89,8 +89,11 @@ const Game = () => {
 
     return (
         <>
+        <div>
         <h1 className="pt-10 text-4xl text-center flex justify-center font-bold text-gray-900">Tic-Tac-Toe ∞</h1>
-        <div className="flex flex-col mx-auto w-full md:w-2/3 lg:w-1/2 bg-blue-900 p-10 rounded-lg">
+        <p>* Only three moves will be retained, past moves disappear~</p>
+        </div>
+        <div className="flex flex-col mt-4 mx-auto w-full md:w-2/3 lg:w-1/2 bg-blue-900 p-10 rounded-lg">
             <div className="mx-4">
                 <div className="w-56 mx-auto mb-8">
                     <p className="text-blue-200 text-3xl font-bold">{winner==="Tie"? "It's a tie!" : (winner? 'Winner: ' + (xIsNext? 'O' : 'X') + '!': 'Next Player: ' + (xIsNext ? 'X' : 'O'))}</p>
